@@ -1,11 +1,14 @@
 import SipiarImage from '../assets/SipiarImage.png'
-
+import ReactJS from '../assets/React.png'
+import Tailwind from '../assets/Tailwind.png'
+import Supabase from '../assets/Supabase.png'
+import Vscode from '../assets/Vscode.png'
 function Sipiar() {
   return (
     <div className="relative bg-picture text-gray-300 min-h-screen font-sans bg-fixed bg-cover bg-center flex flex-col items-center justify-center">
       {/* Background overlay */}
       <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
-      
+
       {/* Main content */}
       <div className="flex flex-col items-center z-20 max-w-6xl px-5 py-10">
         {/* Image and Project Overview */}
@@ -20,17 +23,17 @@ function Sipiar() {
               Project Overview
             </p>
             <p className="text-white font-semibold text-start bg-black bg-opacity-15 text-sm sm:text-base lg:text-lg leading-relaxed">
-              My passion for technology began at a young age, leading me to pursue
-              a Bachelor of Science in Information Technology, majoring in
-              Software Development, at the University of Science and Technology of
-              Southern Philippines.
+              SIPIAR: Smartphone-Based Life Saving First Aid Application with
+              Integrated Emergency Notification is a system focused on emergency
+              situations, aiming to improve response effectiveness. It includes
+              a web application, two mobile apps, and a Supabase-powered
+              backend-as-a-service.
               <br />
-              <br /> During my studies, I gained hands-on experience with widely
-              used technologies, working on both This exposure has given me a
-              foundation and a broader understanding of software development. As
-              an aspiring developer, I am eager to grow my skills, explore new
-              technologies, and contribute to impactful projects in the tech
-              industry.
+              <br /> My role involved managing the Supabase backend, ensuring
+              efficient data handling and user authentication. I also
+              contributed to the frontend, integrating Supabase with the mobile
+              and web apps for seamless communication between the interface and
+              backend.
             </p>
           </div>
         </div>
@@ -42,37 +45,25 @@ function Sipiar() {
           </p>
           <div className="flex flex-wrap justify-center gap-4 lg:gap-6 mb-6 lg:mb-8">
             <div className="w-16 sm:w-20 lg:w-24 flex flex-col items-center text-center">
-              <img
-                src="https://img.icons8.com/plasticine/36/react.png"
-                alt="React.JS"
-              />
+              <img src={ReactJS} className="w-8" alt="React.JS" />
               <p className="font-bold text-white bg-black bg-opacity-10 text-sm p-1">
                 React.JS
               </p>
             </div>
             <div className="w-16 sm:w-20 lg:w-24 flex flex-col items-center text-center">
-              <img
-                src="https://img.icons8.com/color/36/tailwind_css.png"
-                alt="Tailwind"
-              />
+              <img src={Tailwind} className="w-8" alt="Tailwind" />
               <p className="font-bold text-white bg-black bg-opacity-10 text-sm p-1">
                 Tailwind
               </p>
             </div>
             <div className="w-16 sm:w-20 lg:w-24 flex flex-col items-center text-center">
-              <img
-                src=" https://img.icons8.com/color/36/supabase.png"
-                alt="Supabase"
-              />
+              <img src={Supabase} className="w-8" alt="Supabase" />
               <p className="font-bold text-white bg-black bg-opacity-10 text-sm p-1">
                 Supabase
               </p>
             </div>
             <div className="w-16 sm:w-20 lg:w-24 flex flex-col items-center text-center">
-              <img
-                src="https://img.icons8.com/color/36/visual-studio-code-2019.png"
-                alt="VS Code"
-              />
+              <img src={Vscode} className="w-8" alt="VS Code" />
               <p className="font-bold text-white bg-black bg-opacity-10 text-sm p-1">
                 VS Code
               </p>

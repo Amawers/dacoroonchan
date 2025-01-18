@@ -2,7 +2,21 @@ import { useState } from 'react'
 import { Link, Element } from 'react-scroll'
 import Sipiar from '../assets/SipiarImage.png'
 import Cbc from '../assets/CbcImage.png'
-
+import Github from '../assets/Github.png'
+import Facebook from '../assets/Facebook.png'
+import Linkedin from '../assets/Linkedin.png'
+import Html from '../assets/Html.png'
+import Css from '../assets/Css.png'
+import Javascript from '../assets/Javascript.png'
+import ReactJS from '../assets/React.png'
+import Tailwind from '../assets/Tailwind.png'
+import Mysql from '../assets/Mysql.png'
+import Supabase from '../assets/Supabase.png'
+import Vscode from '../assets/Vscode.png'
+import Git from '../assets/Git.png'
+import Figma from '../assets/Figma.png'
+import Laravel from '../assets/Laravel.png'
+import Php from '../assets/Php.png'
 function Home() {
   const [activeSection, setActiveSection] = useState('about')
 
@@ -57,30 +71,21 @@ function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png"
-                alt="GitHub"
-              />
+              <img src={Github} className="w-8" alt="GitHub" />
             </a>
             <a
               href="https://www.linkedin.com/in/christian-jericho-dacoroon-24776a234/"
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin.png"
-                alt="LinkedIn"
-              />
+              <img src={Linkedin} className="w-8" alt="LinkedIn" />
             </a>
             <a
               href="https://www.facebook.com/amaw044/"
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook-new.png"
-                alt="Facebook"
-              />
+              <img src={Facebook} className="w-8" alt="Facebook" />
             </a>
           </div>
         </div>
@@ -99,30 +104,21 @@ function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png"
-                alt="GitHub"
-              />
+              <img src={Github} className="w-8" alt="GitHub" />
             </a>
             <a
               href="https://www.linkedin.com/in/christian-jericho-dacoroon-24776a234/"
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin.png"
-                alt="LinkedIn"
-              />
+              <img src={Linkedin} className="w-8" alt="LinkedIn" />
             </a>
             <a
               href="https://www.facebook.com/amaw044/"
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook-new.png"
-                alt="Facebook"
-              />
+              <img src={Facebook} className="w-8" alt="Facebook" />
             </a>
           </div>
         </div>
@@ -177,118 +173,79 @@ function Home() {
               <div className="flex flex-wrap gap-6 justify-center mt-10">
                 {/* Skill icons */}
                 <div className="w-24 flex flex-col items-center text-center">
-                  <img
-                    src="https://img.icons8.com/color/36/html-5--v1.png"
-                    alt="HTML"
-                  />
+                  <img src={Html} className="w-8" alt="HTML" />
                   <p className="font-bold text-white bg-black bg-opacity-10 p-1">
                     HTML
                   </p>
                 </div>
                 <div className="w-24 flex flex-col items-center text-center">
-                  <img
-                    src="https://img.icons8.com/fluency/36/css3.png"
-                    alt="CSS"
-                  />
+                  <img src={Css} className="w-8" alt="CSS" />
                   <p className="font-bold text-white bg-black bg-opacity-10 p-1">
                     CSS
                   </p>
                 </div>
                 <div className="w-24 flex flex-col items-center text-center">
-                  <img
-                    src="https://img.icons8.com/color/36/javascript--v1.png"
-                    alt="JavaScript"
-                  />
+                  <img src={Javascript} className="w-8" alt="JavaScript" />
                   <p className="font-bold text-white bg-black bg-opacity-10 p-1">
                     JavaScript
                   </p>
                 </div>
                 <div className="w-24 flex flex-col items-center text-center">
-                  <img
-                    src="https://img.icons8.com/plasticine/36/react.png"
-                    alt="React.JS"
-                  />
+                  <img src={ReactJS} className="w-8" alt="React.JS" />
                   <p className="font-bold text-white bg-black bg-opacity-10 p-1">
                     React.JS
                   </p>
                 </div>
                 <div className="w-24 flex flex-col items-center text-center">
-                  <img
-                    src="https://img.icons8.com/color/36/tailwind_css.png"
-                    alt="Tailwind"
-                  />
+                  <img src={Tailwind} className="w-8" alt="Tailwind" />
                   <p className="font-bold text-white bg-black bg-opacity-10 p-1">
                     Tailwind
                   </p>
                 </div>
                 <div className="w-24 flex flex-col items-center text-center">
-                  <img
-                    src="https://img.icons8.com/color/36/mysql-logo.png"
-                    alt="MySQL"
-                  />
+                  <img src={Mysql} className="w-8" alt="MySQL" />
                   <p className="font-bold text-white bg-black bg-opacity-10 p-1">
                     MySQL
                   </p>
                 </div>
                 <div className="w-24 flex flex-col items-center text-center">
-                  <img
-                    src="https://img.icons8.com/windows/32/ff0000/laravel.png"
-                    alt="Laravel"
-                  />
+                  <img src={Laravel} className="w-8" alt="Laravel" />
                   <p className="font-bold text-white bg-black bg-opacity-10 p-1">
                     Laravel
                   </p>
                 </div>
                 <div className="w-24 flex flex-col items-center text-center">
-                  <img
-                    src="https://img.icons8.com/officel/36/php-logo.png"
-                    alt="PHP"
-                  />
+                  <img src={Php} className="w-8" alt="PHP" />
                   <p className="font-bold text-white bg-black bg-opacity-10 p-1">
                     PHP
                   </p>
                 </div>
                 <div className="w-24 flex flex-col items-center text-center">
-                  <img
-                    src=" https://img.icons8.com/color/36/supabase.png"
-                    alt="Supabase"
-                  />
+                  <img src={Supabase} className="w-8" alt="Supabase" />
                   <p className="font-bold text-white bg-black bg-opacity-10 p-1">
                     Supabase
                   </p>
                 </div>
                 <div className="w-24 flex flex-col items-center text-center">
-                  <img
-                    src="https://img.icons8.com/color/36/visual-studio-code-2019.png"
-                    alt="VS Code"
-                  />
+                  <img src={Vscode} className="w-8" alt="VS Code" />
                   <p className="font-bold text-white bg-black bg-opacity-10 p-1">
                     VS Code
                   </p>
                 </div>
                 <div className="w-24 flex flex-col items-center text-center">
-                  <img
-                    src="https://img.icons8.com/color/36/git.png"
-                    alt="Git"
-                  />
+                  <img src={Git} className="w-8" alt="Git" />
                   <p className="font-bold text-white bg-black bg-opacity-10 p-1">
                     Git
                   </p>
                 </div>
                 <div className="w-24 flex flex-col items-center text-center">
-                  <img
-                    src="https://img.icons8.com/ios-glyphs/36/ffffff/github.png"
-                    alt="GitHub"
-                  />
+                  <img src={Github} className="w-8" alt="GitHub" />
                   <p className="font-bold text-white bg-black bg-opacity-10 p-1">
                     GitHub
                   </p>
                 </div>
                 <div className="w-24 flex flex-col items-center text-center">
-                  <img
-                    src="https://img.icons8.com/color/36/figma--v1.png"
-                    alt="Figma"
-                  />
+                  <img src={Figma} className="w-8" alt="Figma" />
                   <p className="font-bold text-white bg-black bg-opacity-10 p-1">
                     Figma
                   </p>
@@ -331,23 +288,11 @@ function Home() {
                   </p>
                   {/* Keywords */}
                   <div className="flex gap-4 flex-wrap">
-                    <img
-                      src="https://img.icons8.com/plasticine/36/react.png"
-                      alt="React.JS"
-                    />
-                    <img
-                      src="https://img.icons8.com/color/36/tailwind_css.png"
-                      alt="Tailwind"
-                    />
-                    <img
-                      src=" https://img.icons8.com/color/36/supabase.png"
-                      alt="Supabase"
-                    />
+                    <img src={ReactJS} className="w-8" alt="React.JS" />
+                    <img src={Tailwind} className="w-8" alt="Tailwind" />
+                    <img src={Supabase} className="w-8" alt="Supabase" />
 
-                    <img
-                      src="https://img.icons8.com/color/36/visual-studio-code-2019.png"
-                      alt="VS Code"
-                    />
+                    <img src={Vscode} className="w-8" alt="VS Code" />
                   </div>
                 </div>
               </a>
@@ -363,7 +308,7 @@ function Home() {
                     className="object-fill h-full w-full transition-transform duration-500 ease-in-out transform hover:scale-105"
                   />
                 </div>
-                <div className="w-2/3 py-6 flex flex-col justify-between px-6">
+                <div className="w-2/3 py-5 flex flex-col justify-between px-6">
                   <h3 className="text-2xl font-extrabold text-white">
                     CBC RAIS
                   </h3>
@@ -375,22 +320,10 @@ function Home() {
                   </p>
                   {/* Keywords */}
                   <div className="flex gap-4 flex-wrap">
-                    <img
-                      src="https://img.icons8.com/windows/32/ff0000/laravel.png"
-                      alt="Laravel"
-                    />
-                    <img
-                      src="https://img.icons8.com/color/36/tailwind_css.png"
-                      alt="Tailwind"
-                    />
-                    <img
-                      src="https://img.icons8.com/color/36/mysql-logo.png"
-                      alt="MySQL"
-                    />
-                    <img
-                      src="https://img.icons8.com/color/36/visual-studio-code-2019.png"
-                      alt="VS Code"
-                    />
+                    <img src={Laravel} className="w-7" alt="Laravel" />
+                    <img src={Tailwind} className="w-7" alt="Tailwind" />
+                    <img src={Mysql} className="w-7" alt="MySQL" />
+                    <img src={Vscode} className="w-7" alt="VS Code" />
                   </div>
                 </div>
               </a>
