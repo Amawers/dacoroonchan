@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Link, Element } from 'react-scroll'
 import Sipiar from '../assets/SipiarImage.png'
 import Cbc from '../assets/CbcImage.png'
@@ -17,15 +16,26 @@ import Git from '../assets/Git.png'
 import Figma from '../assets/Figma.png'
 import Laravel from '../assets/Laravel.png'
 import Php from '../assets/Php.png'
+import { useState, useEffect } from 'react';
+
 function Home() {
   const [activeSection, setActiveSection] = useState('about')
+  const [showContent, setShowContent] = useState(false);
+  
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setShowContent(true);
+      }, 600);
+  
+      return () => clearTimeout(timer);
+    }, []);
 
   return (
     <div className="relative bg-picture text-gray-300 min-h-screen font-sans bg-fixed bg-cover bg-center">
       {/* Background overlay */}
       <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
-
-      <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row gap-8 px-4 sm:px-6 md:px-8">
+     
+      <div className={`relative max-w-6xl mx-auto flex flex-col md:flex-row gap-8 px-4 sm:px-6 md:px-8 transition-opacity duration-1000 ${showContent ? 'opacity-100' : 'opacity-0'}`}>
         {/* Fixed Left Section */}
         <div className="hidden md:flex md:w-1/3 sticky top-0 h-screen flex flex-col justify-center z-10">
           <h1 className="text-4xl md:text-6xl font-bold text-secondary">
