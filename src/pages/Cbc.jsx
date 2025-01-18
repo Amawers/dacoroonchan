@@ -3,14 +3,28 @@ import Laravel from '../assets/Laravel.png'
 import Mysql from '../assets/Mysql.png'
 import Tailwind from '../assets/Tailwind.png'
 import Vscode from '../assets/Vscode.png'
-function Cbc() {
-  return (
-    <div className="relative bg-picture text-gray-300 min-h-screen font-sans bg-fixed bg-cover bg-center flex flex-col items-center justify-center">
-      {/* Background overlay */}
-      <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
+import { useState, useEffect } from 'react';
 
-      {/* Main content */}
-      <div className="flex flex-col items-center z-20 max-w-6xl px-5 py-10">
+function Cbc() {
+ const [showContent, setShowContent] = useState(false);
+ 
+   useEffect(() => {
+     const timer = setTimeout(() => {
+       setShowContent(true);
+     }, 600); 
+ 
+     return () => clearTimeout(timer); 
+   }, []);
+ 
+   return (
+     <div className="relative bg-picture text-gray-300 min-h-screen font-sans bg-fixed bg-cover bg-center flex flex-col items-center justify-center">
+       {/* Background overlay */}
+       <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
+ 
+       {/* Main content */}
+       <div
+         className={`flex flex-col items-center z-20 max-w-6xl px-5 py-10 transition-opacity duration-1000 ${showContent ? 'opacity-100' : 'opacity-0'}`}
+       >
         {/* Image and Project Overview */}
         <div className="flex flex-col lg:flex-row items-center w-full mb-6 lg:mb-10 gap-6 lg:gap-10">
           <img

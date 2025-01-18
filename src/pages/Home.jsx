@@ -267,7 +267,6 @@ function Home() {
               {/* Projects Section */}
               <a
                 href="/sipiar"
-                target="_blank"
                 className="flex hover:bg-gray-700 hover:bg-opacity-25 hover:cursor-pointer rounded-lg transition-all duration-500 ease-in-out justify-center overflow-hidden shadow-lg w-full mx-auto my-4 h-48"
               >
                 <div className="w-1/3 m-4">
@@ -298,7 +297,6 @@ function Home() {
               </a>
               <a
                 href="/cbc"
-                target="_blank"
                 className="flex hover:bg-gray-700 hover:bg-opacity-25 hover:cursor-pointer rounded-lg transition-all duration-500 ease-in-out justify-center overflow-hidden shadow-lg w-full mx-auto my-4 h-48"
               >
                 <div className="w-1/3 m-4">
