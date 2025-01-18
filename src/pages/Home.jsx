@@ -140,7 +140,7 @@ function Home() {
               name="about"
               className="md:min-h-screen flex items-center px-4 sm:px-6 md:px-8"
             >
-              <p className="text-white font-semibold text-start bg-black bg-opacity-15 text-lg md:text-xl">
+              <p className="text-white font-semibold text-justify bg-black bg-opacity-15 text-lg md:text-xl">
                 My passion for technology began at a young age, leading me to
                 pursue a Bachelor of Science in Information Technology, majoring
                 in Software Development, at the University of Science and
@@ -290,7 +290,7 @@ function Home() {
                   <h3 className="text-2xl font-extrabold text-white">
                     Sipiar System
                   </h3>
-                  <p className="text-gray-300 text-sm font-bold">
+                  <p className="text-gray-300 text-sm font-bold text-justify">
                     A thesis project focused on a first aid application that
                     provides assistance for performing CPR, along with emergency
                     broadcast notifications.
@@ -320,7 +320,7 @@ function Home() {
                   <h3 className="text-2xl font-extrabold text-white">
                     CBC RAIS
                   </h3>
-                  <p className="text-gray-300 text-sm font-bold">
+                  <p className="text-gray-300 text-sm font-bold text-justify">
                     A Barangay Certificate Request Management System for online
                     submissions and tracking, aimed at optimizing processes
                     within a barangay. It is built as a full-stack MVC web

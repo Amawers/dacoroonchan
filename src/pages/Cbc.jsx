@@ -36,7 +36,7 @@ function Cbc() {
             <p className="text-yellow-500 font-bold text-center lg:text-left bg-black bg-opacity-15 text-xl sm:text-2xl lg:text-3xl mb-4">
               Project Overview
             </p>
-            <p className="text-white font-semibold text-start bg-black bg-opacity-15 text-sm sm:text-base lg:text-lg leading-relaxed">
+            <p className="text-white font-semibold text-justify bg-black bg-opacity-15 text-sm sm:text-base lg:text-lg leading-relaxed">
               CBC - RAIS: Cedula Barangay Certificate - Request and Issue System
               is a full-stack MVC web application designed to streamline the
               request and issuance of barangay certificates, improving
