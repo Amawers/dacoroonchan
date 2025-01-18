@@ -1,6 +1,6 @@
-import SipiarImage from '../assets/SipiarImage.png'
+import CbcImage from '../assets/CbcImage.png'
 
-function Sipiar() {
+function Cbc() {
   return (
     <div className="relative bg-picture text-gray-300 min-h-screen font-sans bg-fixed bg-cover bg-center flex flex-col items-center justify-center">
       {/* Background overlay */}
@@ -11,7 +11,7 @@ function Sipiar() {
         {/* Image and Project Overview */}
         <div className="flex flex-col lg:flex-row items-center w-full mb-6 lg:mb-10 gap-6 lg:gap-10">
           <img
-            src={SipiarImage}
+            src={CbcImage}
             alt="Card Image"
             className="w-full lg:w-1/2 object-cover transition-transform duration-500 ease-in-out transform hover:scale-105"
           />
@@ -41,15 +41,15 @@ function Sipiar() {
             Tools Used
           </p>
           <div className="flex flex-wrap justify-center gap-4 lg:gap-6 mb-6 lg:mb-8">
-            <div className="w-16 sm:w-20 lg:w-24 flex flex-col items-center text-center">
-              <img
-                src="https://img.icons8.com/plasticine/36/react.png"
-                alt="React.JS"
-              />
-              <p className="font-bold text-white bg-black bg-opacity-10 text-sm p-1">
-                React.JS
-              </p>
-            </div>
+          <div className="w-24 flex flex-col items-center text-center">
+                  <img
+                    src="https://img.icons8.com/windows/32/ff0000/laravel.png"
+                    alt="Laravel"
+                  />
+                  <p className="font-bold text-white bg-black bg-opacity-10 p-1">
+                    Laravel
+                  </p>
+                </div>
             <div className="w-16 sm:w-20 lg:w-24 flex flex-col items-center text-center">
               <img
                 src="https://img.icons8.com/color/36/tailwind_css.png"
@@ -59,15 +59,15 @@ function Sipiar() {
                 Tailwind
               </p>
             </div>
-            <div className="w-16 sm:w-20 lg:w-24 flex flex-col items-center text-center">
-              <img
-                src=" https://img.icons8.com/color/36/supabase.png"
-                alt="Supabase"
-              />
-              <p className="font-bold text-white bg-black bg-opacity-10 text-sm p-1">
-                Supabase
-              </p>
-            </div>
+            <div className="w-24 flex flex-col items-center text-center">
+                  <img
+                    src="https://img.icons8.com/color/36/mysql-logo.png"
+                    alt="MySQL"
+                  />
+                  <p className="font-bold text-white bg-black bg-opacity-10 p-1">
+                    MySQL
+                  </p>
+                </div>
             <div className="w-16 sm:w-20 lg:w-24 flex flex-col items-center text-center">
               <img
                 src="https://img.icons8.com/color/36/visual-studio-code-2019.png"
@@ -91,4 +91,4 @@ function Sipiar() {
   )
 }
 
-export default Sipiar
+export default Cbc
